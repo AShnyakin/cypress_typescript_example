@@ -6,7 +6,7 @@
   "experimentalStudio": true,
   "pluginsFile": "cypress/plugins/index",
   "supportFile": "cypress/support/index.ts",
-  "video": false,
+  "video": true,
   "videosFolder": "./dist/cypress/videos",
   "screenshotsFolder": "./dist/cypress/screenshots",
   "chromeWebSecurity": false,
@@ -16,13 +16,8 @@
     "mochaFile": "./dist/cypress/TEST-report-[hash].xml"
   },
   "retries": 0,
-  "defaultCommandTimeout": 10000,
-  "requestTimeout": 10000,
+  "defaultCommandTimeout": 6000,
+  "requestTimeout": 6000,
   "viewportWidth": 1920,
-  "viewportHeight": 1080,
-  "env": {
-    "baseUrl": "url",
-    "pazz": "pazz",
-    "usar": "usar"
-  }
+  "viewportHeight": 1080
 }

@@ -3,7 +3,6 @@
 ‿︵‿︵‿︵‿ヽ(°□° )ノ︵‿︵‿︵‿︵
 
 
-
 ## Preparation
 
 NodeJs is needed for Cypress initial installation [NodeJs Download](https://nodejs.org/en/download/)

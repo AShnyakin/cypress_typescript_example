@@ -18,9 +18,8 @@ describe('Ping test', () => {
 
         // simple click action example
         cy.contains('Login').click();
-
         cy.get('#profile > .avatar-block').click();
-
+        cy.click({force: true});
         // variable using pure typescript
         const userName = Cypress.env('usar').replace('.', "-");
 
