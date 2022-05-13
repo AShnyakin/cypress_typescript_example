@@ -29,6 +29,7 @@ declare namespace Cypress {
          * Wraps iframe by cypress command
          */
         getIframeBody(): Chainable<any>;
+        getMultipleFields(selectors: string[]): Chainable<any>;
     }
 }
 
@@ -36,3 +37,15 @@ declare namespace Cypress {
 Cypress.Commands.add('getIframeBody', () => {
     return cy.get('iframe').its('0.contentDocument.body').should('not.be.empty').then(cy.wrap);
 });
+
+Cypress.Commands.add('getMultipleFields', (selectors) => {
+    const values = {}
+    selectors.forEach((selector) => {
+        cy.get(selector)
+            .invoke('attr', 'value')
+            .then((s) => {
+                values[selector] = s
+            })
+    })
+    cy.wrap(values);
+})

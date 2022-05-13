@@ -15,5 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import './authz'
+import '@cypress/fiddle'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

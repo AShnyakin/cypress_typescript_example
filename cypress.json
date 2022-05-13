@@ -16,8 +16,8 @@
     "mochaFile": "./dist/cypress/TEST-report-[hash].xml"
   },
   "retries": 0,
-  "defaultCommandTimeout": 6000,
-  "requestTimeout": 6000,
-  "viewportWidth": 1920,
-  "viewportHeight": 1080
+  "defaultCommandTimeout": 3000,
+  "requestTimeout": 3000,
+  "viewportWidth": 1024,
+  "viewportHeight": 768
 }
