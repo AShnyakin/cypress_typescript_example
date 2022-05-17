@@ -15,14 +15,12 @@ describe('Ping test', () => {
         cy.get('#username').type(Cypress.env('usar'));
         // use log false to hide password from cypress logs
         cy.get('#password').type(Cypress.env('pazz'), { log: false });
-
         // simple click action example
         cy.contains('Login').click();
         cy.get('#profile > .avatar-block').click();
         cy.click({force: true});
         // variable using pure typescript
         const userName = Cypress.env('usar').replace('.', "-");
-
         // example with text contains assertion
         cy.get('.user-nicename').contains(userName);
         // example using arrow function to manipulate element as object
